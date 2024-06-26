@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <title>Productos</title>
+    <link rel="stylesheet" href="..//assets/css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__nav-container">
+                <div class="header__logo-container">
+                    <!-- LOGO -->
+                    <a href="../pages/home.html" class="header__a-logo">
+                        <img src="..//assets/images/logo.png" alt="logo-alurageek">
+                    </a>
+                    <!-- BUSQUEDA -->
+                    <form class="header__nav-search" data-formsearch>
+                        <input class="header__search" type="text" placeholder="¿Qué deseas buscar?" data-busqueda
+                            required>
+                        <button class="header__btn-search" type="submit">
+                            <img src="../assets/images/icon-search.svg" alt="icon-search">
+                        </button>   
+                    </form>
+                </div>
+                <button class="header__btn-search-mobile">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Icone">
+                            <path id="Vector"
+                                d="M15.5 14.5H14.71L14.43 14.23C15.63 12.83 16.25 10.92 15.91 8.89C15.44 6.11 13.12 3.89 10.32 3.55C6.09001 3.03 2.53002 6.59 3.05002 10.82C3.39002 13.62 5.61002 15.94 8.39002 16.41C10.42 16.75 12.33 16.13 13.73 14.93L14 15.21V16L18.25 20.25C18.66 20.66 19.33 20.66 19.74 20.25C20.15 19.84 20.15 19.17 19.74 18.76L15.5 14.5ZM9.50002 14.5C7.01002 14.5 5.00002 12.49 5.00002 10C5.00002 7.51 7.01002 5.5 9.50002 5.5C11.99 5.5 14 7.51 14 10C14 12.49 11.99 14.5 9.50002 14.5Z"
+                                fill="#464646" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="productos">
+            <!-- TITULO -->
+            <div class="productos__container-title">
+                <h2 class="productos__title">Todos los productos</h2>
+                <a class="productos__agregar-producto" href="agregar-producto.html">Agregar Producto</a>
+                <a class="productos__agregar-producto-mobile" href="agregar-producto.html">
+                    <img src="../assets/images/add.svg" alt="icon add">
+                </a>
+            </div>
+            <!-- PRODUCTOS -->
+            <div class="productos__container-card" data-productos>
+                <div class="productos__card">
+                    <figure class="productos__figure">
+                        <img src="../assets/images/RetroJuegos/sw1.png" alt="imagen Killer Inscticnt - SNES (CIB)" class="productos__card-img">
+                        <div class="productos__icons-container">
+                            <!-- Btn Borrar -->
+                            <button class="productos__delete" id="e0ea324b-356a-4423-a619-09338941354b">
+                                <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_996)">
+                                        <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_996">
+                                            <rect width="24" height="24"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                            <!-- Btn Editar -->
+                            <a href="./editar-producto.html?id=e0ea324b-356a-4423-a619-09338941354b" class="productos__edit">
+                                <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_993)">
+                                        <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_993">
+                                            <rect width="24" height="24"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </figure>
+                    <h4 class="productos__name">Killer Inscticnt - SNES (CIB)</h4>
+                    <h3 class="productos__price">$85.000 CLP.</h3>
+                    <a href="./ver-producto.html?id=e0ea324b-356a-4423-a619-09338941354b" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+
+                <div class="productos__card">
+                <figure class="productos__figure">
+                    <img src="../assets/images/RetroJuegos/sw2.png" alt="imagen Sonic The Hedhegog 3 - SG (CIB)" class="productos__card-img">
+                    <div class="productos__icons-container">
+                        <!-- Btn Borrar -->
+                        <button class="productos__delete" id="9eaa1a1e-8628-4cbf-a3a3-6d2d0b3e1c9e">
+                            <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_996)">
+                                    <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_996">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <!-- Btn Editar -->
+                        <a href="./editar-producto.html?id=9eaa1a1e-8628-4cbf-a3a3-6d2d0b3e1c9e" class="productos__edit">
+                            <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_993)">
+                                    <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_993">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </figure>
+                <h4 class="productos__name">Sonic The Hedhegog 3 - SG (CIB)</h4>
+                <h3 class="productos__price">$50.000 CLP.</h3>
+                <a href="./ver-producto.html?id=9eaa1a1e-8628-4cbf-a3a3-6d2d0b3e1c9e" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+
+                <div class="productos__card">
+                <figure class="productos__figure">
+                    <img src="../assets/images/RetroJuegos/sw3.png" alt="imagen Yoshi Island - SNES (CIB)" class="productos__card-img">
+                    <div class="productos__icons-container">
+                        <!-- Btn Borrar -->
+                        <button class="productos__delete" id="cb730e61-97f8-4fe8-aabf-4c3db553cc0c">
+                            <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_996)">
+                                    <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_996">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <!-- Btn Editar -->
+                        <a href="./editar-producto.html?id=cb730e61-97f8-4fe8-aabf-4c3db553cc0c" class="productos__edit">
+                            <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_993)">
+                                    <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_993">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </figure>
+                <h4 class="productos__name">Yoshi Island - SNES (CIB)</h4>
+                <h3 class="productos__price">$60.000 CLP.</h3>
+                <a href="./ver-producto.html?id=cb730e61-97f8-4fe8-aabf-4c3db553cc0c" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+
+                <div class="productos__card">
+                <figure class="productos__figure">
+                    <img src="../assets/images/RetroJuegos/sw4.png" alt="imagen Super SmashBros 64 - N64 (CIB)" class="productos__card-img">
+                    <div class="productos__icons-container">
+                        <!-- Btn Borrar -->
+                        <button class="productos__delete" id="23ba121e-1cb8-4d71-b6f3-9e6d52b20470">
+                            <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_996)">
+                                    <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_996">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <!-- Btn Editar -->
+                        <a href="./editar-producto.html?id=23ba121e-1cb8-4d71-b6f3-9e6d52b20470" class="productos__edit">
+                            <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_993)">
+                                    <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_993">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </figure>
+                <h4 class="productos__name">Super SmashBros 64 - N64 (CIB)</h4>
+                <h3 class="productos__price">$60.000 CLP.</h3>
+                <a href="./ver-producto.html?id=23ba121e-1cb8-4d71-b6f3-9e6d52b20470" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+
+                <div class="productos__card">
+            <figure class="productos__figure">
+                <img src="..//assets/images/RetroJuegos/sw5.png" alt="imagen Pokémon Edicion Plata - GBC (CIB)" class="productos__card-img">
+                <div class="productos__icons-container">
+                    <!-- Btn Borrar -->
+                    <button class="productos__delete" id="g9h30e61-34w1-4fe8-vnxx-6l6db553dd5p">
+                        <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_996)">
+                                <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_996">
+                                    <rect width="24" height="24"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <!-- Btn Editar -->
+                    <a href="./editar-producto.html?id=g9h30e61-34w1-4fe8-vnxx-6l6db553dd5p" class="productos__edit">
+                        <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_993)">
+                                <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_993">
+                                    <rect width="24" height="24"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </figure>
+            <h4 class="productos__name">Pokémon Edicion Plata - GBC (CIB)</h4>
+            <h3 class="productos__price">$70.000 CLP.</h3>
+            <a href="./ver-producto.html?id=g9h30e61-34w1-4fe8-vnxx-6l6db553dd5p" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+
+                <div class="productos__card">
+                <figure class="productos__figure">
+                    <img src="..//assets/images/RetroJuegos/sw6.png" alt="imagen Doom - SNES (CIB)" class="productos__card-img">
+                    <div class="productos__icons-container">
+                        <!-- Btn Borrar -->
+                        <button class="productos__delete" id="3eed7026-ee93-46ac-a9bf-745dd3747748">
+                            <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_996)">
+                                    <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_996">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <!-- Btn Editar -->
+                        <a href="./editar-producto.html?id=3eed7026-ee93-46ac-a9bf-745dd3747748" class="productos__edit">
+                            <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_993)">
+                                    <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_993">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </figure>
+                <h4 class="productos__name">Doom - SNES (CIB)</h4>
+                <h3 class="productos__price">$80.000 CLP.</h3>
+                <a href="./ver-producto.html?id=3eed7026-ee93-46ac-a9bf-745dd3747748" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+
+                <div class="productos__card">
+                <figure class="productos__figure">
+                    <img src="../assets/images/RetroConsolas/c1.png" alt="imagen Nintendo GameBoy - (CIB)" class="productos__card-img">
+                    <div class="productos__icons-container">
+                        <!-- Btn Borrar -->
+                        <button class="productos__delete" id="cfc5e01d-20fb-4a41-8dd2-0040dcf8826b">
+                            <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_996)">
+                                    <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_996">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <!-- Btn Editar -->
+                        <a href="./editar-producto.html?id=cfc5e01d-20fb-4a41-8dd2-0040dcf8826b" class="productos__edit">
+                            <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_993)">
+                                    <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_993">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </figure>
+                <h4 class="productos__name">Nintendo GameBoy - (CIB)</h4>
+                <h3 class="productos__price">$150.000 CLP.</h3>
+                <a href="./ver-producto.html?id=cfc5e01d-20fb-4a41-8dd2-0040dcf8826b" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+
+                <div class="productos__card">
+                <figure class="productos__figure">
+                    <img src="../assets/images/RetroConsolas/c2.png" alt="imagen Nintendo 64 Pokémon Stadium Set - (CIB)" class="productos__card-img">
+                    <div class="productos__icons-container">
+                        <!-- Btn Borrar -->
+                        <button class="productos__delete" id="6ae6f0b1-c194-4c7c-a08f-7b6460d3ff88">
+                            <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_996)">
+                                    <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_996">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <!-- Btn Editar -->
+                        <a href="./editar-producto.html?id=6ae6f0b1-c194-4c7c-a08f-7b6460d3ff88" class="productos__edit">
+                            <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_993)">
+                                    <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_993">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </figure>
+                <h4 class="productos__name">Nintendo 64 Pokémon Stadium Set - (CIB)</h4>
+                <h3 class="productos__price">$250.000 CLP.</h3>
+                <a href="./ver-producto.html?id=6ae6f0b1-c194-4c7c-a08f-7b6460d3ff88" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+
+                <div class="productos__card">
+                <figure class="productos__figure">
+                    <img src="../assets/images/RetroConsolas/c3.png" alt="imagen Sony PlayStation 2 - (CIB)" class="productos__card-img">
+                    <div class="productos__icons-container">
+                        <!-- Btn Borrar -->
+                        <button class="productos__delete" id="4174188c-b724-4b27-9951-2e21de3b5506">
+                            <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_996)">
+                                    <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_996">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <!-- Btn Editar -->
+                        <a href="./editar-producto.html?id=4174188c-b724-4b27-9951-2e21de3b5506" class="productos__edit">
+                            <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_993)">
+                                    <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_993">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </figure>
+                <h4 class="productos__name">Sony PlayStation 2 - (CIB)</h4>
+                <h3 class="productos__price">$120.000 CLP.</h3>
+                <a href="./ver-producto.html?id=4174188c-b724-4b27-9951-2e21de3b5506" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+
+                <div class="productos__card">
+                <figure class="productos__figure">
+                    <img src="../assets/images/RetroConsolas/c4.png" alt="imagen Super Nintendo Killer Set - (CIB)" class="productos__card-img">
+                    <div class="productos__icons-container">
+                        <!-- Btn Borrar -->
+                        <button class="productos__delete" id="89a365f2-00d2-465d-bbaf-a405aed6255f">
+                            <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_996)">
+                                    <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_996">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <!-- Btn Editar -->
+                        <a href="./editar-producto.html?id=89a365f2-00d2-465d-bbaf-a405aed6255f" class="productos__edit">
+                            <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_993)">
+                                    <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_993">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </figure>
+                <h4 class="productos__name">Super Nintendo Killer Set - (CIB)</h4>
+                <h3 class="productos__price">$350.000 CLP.</h3>
+                <a href="./ver-producto.html?id=89a365f2-00d2-465d-bbaf-a405aed6255f" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+
+                <div class="productos__card">
+                <figure class="productos__figure">
+                    <img src="../assets/images/RetroConsolas/c5.png" alt="imagen Sony PlayStation 1 - (CIB)" class="productos__card-img">
+                    <div class="productos__icons-container">
+                        <!-- Btn Borrar -->
+                        <button class="productos__delete" id="529959de-570d-4fdf-b0ee-e13733b4852d">
+                            <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_996)">
+                                    <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_996">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <!-- Btn Editar -->
+                        <a href="./editar-producto.html?id=529959de-570d-4fdf-b0ee-e13733b4852d" class="productos__edit">
+                            <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_993)">
+                                    <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_993">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </figure>
+                <h4 class="productos__name">Sony PlayStation 1 - (CIB)</h4>
+                <h3 class="productos__price">$80.000 CLP.</h3>
+                <a href="./ver-producto.html?id=529959de-570d-4fdf-b0ee-e13733b4852d" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+
+                <div class="productos__card">
+                <figure class="productos__figure">
+                    <img src="../assets/images/RetroConsolas/c6.png" alt="imagen Sega Dreamcast - (CIB)" class="productos__card-img">
+                    <div class="productos__icons-container">
+                        <!-- Btn Borrar -->
+                        <button class="productos__delete" id="0515aaa6-6324-49b9-99a9-ebc168160964">
+                            <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_996)">
+                                    <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_996">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <!-- Btn Editar -->
+                        <a href="./editar-producto.html?id=0515aaa6-6324-49b9-99a9-ebc168160964" class="productos__edit">
+                            <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_993)">
+                                    <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_993">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </figure>
+                <h4 class="productos__name">Sega Dreamcast - (CIB)</h4>
+                <h3 class="productos__price">$150.000 CLP.</h3>
+                <a href="./ver-producto.html?id=0515aaa6-6324-49b9-99a9-ebc168160964" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+
+                <div class="productos__card">
+                <figure class="productos__figure">
+                    <img src="../assets/images/ArticulosRetro/d1.png" alt="imagen R.O.B Accesorio - NES" class="productos__card-img">
+                    <div class="productos__icons-container">
+                        <!-- Btn Borrar -->
+                        <button class="productos__delete" id="d77d874c-8778-42f1-8a02-d8e6a705cfc5">
+                            <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_996)">
+                                    <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_996">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <!-- Btn Editar -->
+                        <a href="./editar-producto.html?id=d77d874c-8778-42f1-8a02-d8e6a705cfc5" class="productos__edit">
+                            <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_993)">
+                                    <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_993">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </figure>
+                <h4 class="productos__name">R.O.B Accesorio - NES</h4>
+                <h3 class="productos__price">$100.000 CLP.</h3>
+                <a href="./ver-producto.html?id=d77d874c-8778-42f1-8a02-d8e6a705cfc5" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+
+                <div class="productos__card">
+                <figure class="productos__figure">
+                    <img src="../assets/images/ArticulosRetro/d2.png" alt="imagen Polera Nintendo World Championship 1990" class="productos__card-img">
+                    <div class="productos__icons-container">
+                        <!-- Btn Borrar -->
+                        <button class="productos__delete" id="2a81d270-76a6-418c-b33f-a1b05136f831">
+                            <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_996)">
+                                    <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_996">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <!-- Btn Editar -->
+                        <a href="./editar-producto.html?id=2a81d270-76a6-418c-b33f-a1b05136f831" class="productos__edit">
+                            <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_993)">
+                                    <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_993">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </figure>
+                <h4 class="productos__name">Polera Nintendo World Championship 1990</h4>
+                <h3 class="productos__price">$20.000 CLP.</h3>
+                <a href="./ver-producto.html?id=2a81d270-76a6-418c-b33f-a1b05136f831" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+
+                <div class="productos__card">
+                <figure class="productos__figure">
+                    <img src="../assets/images/ArticulosRetro/d3.png" alt="imagen Reloj De Pulsera Gameboy" class="productos__card-img">
+                    <div class="productos__icons-container">
+                        <!-- Btn Borrar -->
+                        <button class="productos__delete" id="0e4e5716-a86c-4940-a13d-116c87aa393a">
+                            <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_996)">
+                                    <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_996">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <!-- Btn Editar -->
+                        <a href="./editar-producto.html?id=0e4e5716-a86c-4940-a13d-116c87aa393a" class="productos__edit">
+                            <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_993)">
+                                    <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_993">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </figure>
+                <h4 class="productos__name">Reloj De Pulsera Gameboy</h4>
+                <h3 class="productos__price">$50.000 CLP.</h3>
+                <a href="./ver-producto.html?id=0e4e5716-a86c-4940-a13d-116c87aa393a" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+
+                <div class="productos__card">
+                <figure class="productos__figure">
+                    <img src="..//assets/images/ArticulosRetro/d4.png" alt="imagen MUG diseño Nintendo NES" class="productos__card-img">
+                    <div class="productos__icons-container">
+                        <!-- Btn Borrar -->
+                        <button class="productos__delete" id="0891f7aa-853e-49cc-a97c-f8a8e97e1517">
+                            <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_996)">
+                                    <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_996">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <!-- Btn Editar -->
+                        <a href="./editar-producto.html?id=0891f7aa-853e-49cc-a97c-f8a8e97e1517" class="productos__edit">
+                            <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_993)">
+                                    <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_993">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </figure>
+                <h4 class="productos__name">MUG diseño Nintendo NES</h4>
+                <h3 class="productos__price">$10.000 CLP.</h3>
+                <a href="./ver-producto.html?id=0891f7aa-853e-49cc-a97c-f8a8e97e1517" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+
+                <div class="productos__card">
+                <figure class="productos__figure">
+                    <img src="../assets/images/ArticulosRetro/d5.png" alt="imagen Super Scoope - SNES (CIB)" class="productos__card-img">
+                    <div class="productos__icons-container">
+                        <!-- Btn Borrar -->
+                        <button class="productos__delete" id="bc872b45-f582-4cd9-82b4-9feb69d79406">
+                            <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_996)">
+                                    <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_996">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <!-- Btn Editar -->
+                        <a href="./editar-producto.html?id=bc872b45-f582-4cd9-82b4-9feb69d79406" class="productos__edit">
+                            <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_993)">
+                                    <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_993">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </figure>
+                <h4 class="productos__name">Super Scoope - SNES (CIB)</h4>
+                <h3 class="productos__price">$50.000 CLP.</h3>
+                <a href="./ver-producto.html?id=bc872b45-f582-4cd9-82b4-9feb69d79406" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+
+                <div class="productos__card">
+                <figure class="productos__figure">
+                    <img src="../assets/images/ArticulosRetro/d6.png" alt="imagen Poleron Nintendo SNES" class="productos__card-img">
+                    <div class="productos__icons-container">
+                        <!-- Btn Borrar -->
+                        <button class="productos__delete" id="20a7432e-271d-4187-b56a-a64880503002">
+                            <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_996)">
+                                    <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_996">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <!-- Btn Editar -->
+                        <a href="./editar-producto.html?id=20a7432e-271d-4187-b56a-a64880503002" class="productos__edit">
+                            <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_993)">
+                                    <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_993">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </figure>
+                <h4 class="productos__name">Poleron Nintendo SNES</h4>
+                <h3 class="productos__price">$30.000 CLP.</h3>
+                <a href="./ver-producto.html?id=20a7432e-271d-4187-b56a-a64880503002" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+
+                <div class="productos__card">
+                <figure class="productos__figure">
+                    <img src="../assets/images/ArticulosRetro/d7.jpg" alt="Zapper - NES (CIB)" class="productos__card-img">
+                    <div class="productos__icons-container">
+                        <!-- Btn Borrar -->
+                        <button class="productos__delete" id="102e2a6e-686b-4c63-a922-49a0d000e6f3">
+                            <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_996)">
+                                    <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_996">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <!-- Btn Editar -->
+                        <a href="./editar-producto.html?id=102e2a6e-686b-4c63-a922-49a0d000e6f3" class="productos__edit">
+                            <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_993)">
+                                    <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_993">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </figure>
+                <h4 class="productos__name">Zapper - NES (CIB)</h4>
+                <h3 class="productos__price">$50.000 CLP.</h3>
+                <a href="./ver-producto.html?id=102e2a6e-686b-4c63-a922-49a0d000e6f3" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+
+                <div class="productos__card">
+                <figure class="productos__figure">
+                    <img src="../assets/images/ArticulosRetro/d8.png" alt="imagen MultiTap HudsonSoft - SNES" class="productos__card-img">
+                    <div class="productos__icons-container">
+                        <!-- Btn Borrar -->
+                        <button class="productos__delete" id="41c776dd-ed2d-4ecd-95d8-4d33ef0c13ac">
+                            <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_996)">
+                                    <path id="Vector" d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_996">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <!-- Btn Editar -->
+                        <a href="./editar-producto.html?id=41c776dd-ed2d-4ecd-95d8-4d33ef0c13ac" class="productos__edit">
+                            <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_993)">
+                                    <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_993">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </figure>
+                <h4 class="productos__name">MultiTap HudsonSoft - SNES</h4>
+                <h3 class="productos__price">$25.00</h3>
+                <a href="./ver-producto.html?id=41c776dd-ed2d-4ecd-95d8-4d33ef0c13ac" class="productos__ver" data-verproducto="">Ver producto</a>
+                </div>
+        </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="info">
+            <div class="info__container">
+                <div class="info__container-list">
+                    <a href="../pages/home.html" class="info__a-logo">
+                        <img src="../assets/images/logo.png" alt="logo-alurageek" class="info__logo">
+                    </a>
+                    <ul class="info__list">
+                        <li class="info__list-item"><a href="#">Somos ALuraGeek!</a></li>
+                        <li class="info__list-item"><a href="#">Política De Privacidad</a></li>
+                        <li class="info__list-item"><a href="#">Nuestras Tiendas</a></li>
+                    </ul>
+                </div>
+                <div class="info__contacto">
+                    <h3 class="info__text">Contactate con nosotros</h3>
+                    <div class="info__input-container">
+                        <div class="info__input-wrapper">
+                            <input class="info__input data" type="text" name="nombre" id="nombre" data-tipo="nombre"
+                                maxlength="40" required>
+                            <label class="info__label" for="nombre">Nombre</label>
+                            <span class="input-message-error">Este campo no es válido</span>
+                        </div>
+                        <div class="info__input-wrapper">
+                            <textarea class="info__textarea data" name="mensaje" id="mensaje" data-tipo="mensaje"
+                                maxlength="120" required></textarea>
+                            <label class="info__label-textarea" for="mensaje">Escribe tu mensaje</label>
+                            <span class="input-message-error">Este campo no es válido</span>
+                        </div>
+                    </div>
+                    <button class="info__btn-contacto" type="submit">Enviar mensaje</button>
+                </div>
+            </div>
+        </section>
+        <section class="creditos">
+            <h5 class="creditos__text">Claudio Saldias A. - Todos los Derechos Reservados.</h5>
+            <p class="creditos__text">©2024</p>
+        </section>
+    </footer>
+
+    <script src="../assets/js/validaciones.js"></script>
+    <script type="module" src="../controller/buscarProducto.js"></script>
+    <script type="module" src="../controller/verProductos.js"></script>
+    <script src="../assets/js/ocultarBtnAccion.js"></script>
+</body>
+
+</html>
